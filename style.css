@@ -1,0 +1,19 @@
+#top{
+    color: teal;
+    scroll-padding: calc();
+}
+h2{
+    color: burlywood;
+}
+h3{
+    color: cornflowerblue;
+}
+.green{
+    color: green;
+}
+div{
+    background-color: grey;
+}
+span{
+    text-transform: uppercase;
+}
