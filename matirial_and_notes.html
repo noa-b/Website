@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matirial and notes</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <h1 id="top">top of the page</h1>
+    <ul>
+        <li><h2>HTML</h2>
+            <ol>
+                <li><!--1)-->
+                    <ul>
+                        <li>*ul* for an unordered , *il* for an element in the list</li>
+                        <li>*ol* for an orgnized list</li>
+                    </ul>
+                </li>
+        
+                <br>
+                <li><!--2)-->
+                    <ul>
+                    <li>"." is for an immage within the same directory</li>
+                    <li>".." is for an immage out side of the curr directory</li>
+                </ul>
+                    </li>
+                <br>
+                <li><!--3)-->
+                    <ul>
+                        <li>*strong* for bold text</li>
+                        <li>3.1)*em* for thinner and right linning text (< h1 id="top">top of the page < h1 >)</li>
+                    </ul>
+                </li>
+                <br>
+                <li><!--4)-->
+                    * &* * will show a special char</li>
+                <br>
+                <li><!--5)-->
+                    <ul>
+                        <li>*#* to point to a spot in the page(< a href="#top">back to the top < /a></li>
+                        <li>*id* for the the name of the place(for one of the pointers)</li>
+                    </ul>
+                </li>
+                <br>
+                <li><!--6)-->
+                    <ul>
+                        <li>To link another page/ to direct the viewers(< a href="matirial_and_notes.html">Notes page < /a>)</li>
+                    </ul>
+                </li>
+                <li>
+                    <p> "aside" keyword:
+                        <br>
+                        will anable to add side comments </p>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <h2>CSS</h2>
+            <ol>
+                <li>
+                    <p>General basics:</p>
+                    <ol>
+                        <li><!--1-->
+                            Stracture:
+                            <br>
+                            <ol>
+                                <li>selector</li>
+                                <li>declaration block</li>
+                                <li>decleration</li>
+                                <li>properties</li>
+                                <li>values</li>
+                            </ol>
+                        </li>
+                        <li><!--2-->
+                            <p>"Power order":</p>
+                            <ul>
+                                <li><p>The basic:</p>
+                                    <ol>
+                                    <li>inline CSS(the strongest)</li>
+                                    <li>internal CSS</li>
+                                    <li>external CSS</li>
+                                    </ol>
+                                </li>
+                                <li><p>Between other elements:</p>
+                                    <ol>
+                                    <li>element selectors(strongest)</li>
+                                    <li>declorators</li>
+                                    <li>div</li>
+                                    </ol>
+                                </li>
+                                <p>Important note:
+                                    <br>
+                                    **If we don't overide a sertain property, all the properties's values will be seen(becouse the inheritence's don't interfeer in that case) 
+                                </p>
+                                <li><p>Rules:</p>
+                                    <ol>
+                                        <li><p>"Last rule:
+                                            <br>
+                                            If there are two diffrent declotarions for the same declorator, the last one will be used.
+                                        </p></li>
+                                        <li><p>"Spaficiry hierarchy:
+                                        <br>
+                                        in short, css will "pick" the mose acurate declorator, so it might not be the declorator on the bottom, becouse a "class" declorator is stronger then a "div" declorator, and so the class diclorator will be chosen, even if it was declered before the "div" declorator.
+                                        </p>
+                                        </li>
+                                        <li><p>Universal selector:
+                                        <br>
+                                        *{
+                                        <br>the properties and stuff
+                                        }
+                                        <br>
+                                        The universal selector won't be used if it have been overrided somewhere, even if it's on the very bottom.
+                                        </p></li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li><!--3-->
+                            <ul>
+                                <li> <p>To link an external    CSS file:
+                                    <br>
+                                    < link ref="TheName" href="TheFIleName.css"/>
+                                    </p>
+                                </li>
+                                <li>                                <p>To write internal css:
+                                        < style > and a closing one>
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>
+                            <p>Coloring:</p>
+                            <ol>
+                                <li><!--4-->
+                                    <ul>
+                                        <li>
+                                            to color a type at a time in CSS:
+                                            <br>
+                                            h1 {
+                                            <br>
+                                            color:aquamarine;
+                                            <br>
+                                            scroll - padding : calc();
+                                            ...}
+                                        </li>
+                                        <li>to color multiple at a time:
+                                            <br>
+                                            h1, h2{
+                                                <br>
+                                                color:aquamarine;
+                                                <br>
+                                                scroll-padding: calc();
+                                                ...}
+                                        
+                                        </li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <p>
+                                        Element selectors:
+                                        <br>
+                                        body {
+                                            <br>
+                                            color:blue;
+                                            ...
+                                        }
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>to color IDs:
+                                        <br>
+                                        #top{
+                                            <br>
+                                            color:grey;
+                                            <br>
+                                            backgroung:black;
+                                            font-size: 40px; 
+                                            ...
+                                        }
+    
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>to color a class:</p>
+                                        <ul>
+                                            <li><p>
+                                                To create a class selector:
+                                                <br>
+                                                < h3 class="green">Green< /h3>
+                                                <br>
+                                                < h3 class="red">Red< /h3>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>To add multiple classes to one selector:
+                                                <br>
+                                                Just add a space and add the other class.
+                                                <br>
+                                                exmple: 
+                                                <br>
+                                                < h3 class="green lowercase">Green< /h3>
+                                                </p>
+                                            </li>
+                                            <li><p>
+                                                .green{
+                                                    <br>
+                                                    color : green
+                                                }
+                                                <br>
+                                                .red{
+                                                    <br>
+                                                    color : red;
+                                                }
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>.lowercase{
+                                                text-transform: lowercase;
+                                                }
+                                                </p>
+                                            </li>
+                                        </ul>
+                                </li>
+                                <li>
+                                    <p>To color specifide things a spesific color:</p>
+                                        <ul>
+                                            <li><p>< div> big texttt < /div>
+                                                <br>
+                                                div{
+                                                    <br>
+                                                    backroung: grey;
+                                                    ...
+                                                }
+                                                </p>
+                                            </li>
+                                            <li><p>< span> the specific text < /span>
+                                                <br>
+                                                span{
+                                                    <br>
+                                                    text-transform: upercase;
+                                                    ...
+                                                }
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    
+    
+                                </li>
+                                <li>
+                                    <p>To color something and specify it's transparicy:
+                                        <br>
+                                        rgba(*red, *green, *blue, *transperecy)
+                                        <br>
+                                        red,green,blue: 0-225;
+                                        transperecy: 0-1;
+                                    </p>
+                                    <p>Really pretty pastel colors:
+                                        <ul>
+                                            <li>
+                                               <p>#7fd1de</p> 
+                                            </li>
+                                            <li>
+                                                <p>#b4bbe8</p>
+                                            </li>
+                                            <li>
+                                                <p>#ffbcac</p>
+                                            </li>
+                                            <li>
+                                                <p>#7fded2</p>
+                                            </li>
+                                        </ul>
+                                    </p>
+                
+                                </li>
+                                <li>
+                                    <p>Hexadecimal coloring:
+                                        <br>
+                                        #RedRedGreenGreenBlueBlue
+                                        <br>
+                                        exmple:Red-#FF0000;Green-#00FF00;Blue-#0000FF;
+                                    </p>
+                                </li>
+                            </ol>
+                        </li>
+                        <li><!--5-->
+                            <p>Sizing:</p>
+                            <ol>
+                                <li><p>Em:
+                                    <br>
+                                    dipends on the default fount side in the machins web browser.
+                                </p>
+                                </li>
+                                <li>
+                                    <p>vw:
+                                        <br>
+                                        NUMwv
+                                        <br>
+                                        to specify the width.
+                                        <br>
+                                        !!!!the num it the precent!!!!
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>hw:
+                                        <br>
+                                        NUMhv
+                                        <br>
+                                        to specify the hight.
+                                        <br>
+                                        !!!!the num it the precent!!!!
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>To display the components diffrently at a sertain size:
+                                    <ol>
+                                        <li>min-starting from</li>
+                                        <li>max-up to</li>
+                                    </ol>
+                                    @media screen and (min-width: TheMinWidth)
+                                    </p>
+                                </li>
+                            </ol>
+                        </li>
+                        <li><!--6-->
+                            <p>Styling:</p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        font- family :TheFont;
+                                        <br>
+                                        the entire page(besides the owns that were specificly changed) will carry this font.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        If the font size isn't avaliable, wecan do the following:
+                                        <br>
+                                        front-family: "thefont" , anotherFont, LastResortFont;
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        font-stack generic-family 
+                                        serif, sns-serif, sursive, fanrasy, monospace
+                                    </p>
+                                </li>
+                                <li><p>Text</p>
+                                    <ol>
+                                        <li>
+                                            <p>line-hight:
+                                                <br>
+                                                spacing between the lins.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                            letter-spacing:
+                                                <br>
+                                                spaccing of the letters.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>letter-spacing</p>
+                                        </li>
+                                        <li><p>word-spacing</p></li>
+                                        <li> <p>
+                                            taxt-transform:
+                                            <br>
+                                            can "transform" the text to upper or lower case, capelize all the words and ect.</p>
+                                        </li>
+                                        <li>
+                                            <p>text-decorator:
+                                                <br>
+                                                can undo defualt decorations(by choosing "none"), or add a decotarion.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <ol>
+                                                <li>
+                                                    <p>
+                                                    inline: <br>
+                                                    will desplay multiple pieces of data in the same line.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        block:
+                                                        <br>
+                                                        will display everypiece of data in it;s own line.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>inline-block:
+                                                        <br>
+                                                    will display data "blocks" on the same line, so that they will have thier backround, but will still be on the same line, at a padding that I will choose
+                                                    </p>
+                                                </li>
+                                            </ol>
+                                            
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li><!--7-->
+                            <ul><p>Positioning:</p>
+                                <li>
+                                    <p>To place in the middle/center:</p>
+                                    <ol>
+                                        <li>
+                                            <p>text-align: center;</p>
+                                        </li>
+                                        <li>
+                                            <p>mergin-left: auto
+                                                <br>
+                                                margin-right: auto
+                                            </p>
+                                        </li>
+                                    </ol>
+                                    <li>
+                                        <p>backround-position: THE-Position(exmple:center);</p> 
+                                    </li>
+                                    <li>To keep the image in it's place, so that the taxt will "move on it":
+                                        <br>
+                                    background-attachment: fixed;
+                                    </li>
+                                    <li>
+                                        <p>To keep an image in a fixed position:
+                                            <br>
+                                        position:fixed;
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>backround-position: Right% Down%
+                                        <br>
+                                        exmples:
+                                        <br>
+                                        <ol>
+                                            <li><p>backround-position: 100% 100%
+                                            <br>
+                                            is the righ-downmostcorner.</p></li>
+                                            <li><p>backround-position: 20% 0%
+                                                <br>
+                                            will be 20% from the left to the right, un the top.
+                                            </p></li>
+                                        </ol>
+                                        </p> 
+                                    </li>
+                                    <li>
+                                        <p>z-index
+                                            <br>
+                                        will enble us to put things on top of each other.
+                                        </p> 
+                                    </li> 
+                                </li>
+                            </ul>
+                        </li> 
+                        <li><!--8-->
+                            <p>Image as background:</p>
+                            <ul>
+                                <li>
+                                    <p>To past the image: <br>
+                                    backround: url()
+                                    </p>
+                                </li>
+                                <li><p>To cover the space needed:
+                                    <br>
+                                background-size: contain;
+                                <br>
+                                will cover the entire space</p>
+                            </ul>
+                        </li>
+                        <li><!--9-->
+                            <p>repetiton:</p>
+                            <ul>
+                                <li>
+                                    <p>To leave the image in it's orignal size:
+                                    <br>
+                                    background-repeat: no-repeat;
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>To repeat only in a sertain direction:
+                                        <br>
+                                    backround-repeat: repeat-x;
+                                        <br>
+                                    will repeat the image only on on the X aces.
+                                    <br>
+                                    the same can be done to the y.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        to repeat the image with paces between each repetition: 
+                                        <br>
+                                        backround-repeat: space;
+                                    </p>
+                                    <li><p>to make sure that only full reapets of the image apear:
+                                    <br>backround-repeat: round;
+                                    </p></li>
+                                </li>
+                            </ul>
+                        </li>
+                        </ol> 
+                        <li>
+                            <p>FOR ANOTHER TOPIC IN CSS That's not basic!!</p>
+                        </li>
+                        </li>
+                    </ol>
+                </li>
+                <br>
+            </ol>
+        </li>   
+    </ul>
+    <br> 
+    <br>
+    <br>
+    <br>
+    <ul>
+        <li><h3>HTML:</h3></li>
+        <ol>
+            <li><p>1-data organizations stractures</p>
+                <ol>
+                        <li><p>unorgenized list</p>
+                            <ul>
+                                <li>1</li>
+                                <li>10</li>
+                                <li>7</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>2</li>
+                            </ul>
+                        </li>
+                        <li><p>orgnized list</p>
+                            <ol>
+                                <li>1</li>
+                                <li>10</li>
+                                <li>7</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>2</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <ol>
+                                <li>
+                                    <table> 
+                                    <td>
+                                        <th>table</th> 
+                                        <th>with</th> 
+                                        <th>one</th> 
+                                        <th>row:</th>
+                                    </td>
+                                    <td>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>10</td>
+                                            <td>7</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </td>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table>
+                                        <th>table in which every num ia a new row:</th>
+                                        <tr>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr></tr>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                        </tr>
+                                    </table>
+                            </ol>
+                        </li>
+                </ol>
+                    </li>
+                <li><!--2-->
+                    <a href="https://photos.google.com/u/0/album/AF1QipMZ0zW-su4g2z1H1dN3A9gA2b2687omYKoZSsde" target="_blank">
+                        <img img src="/Website/first/images/BKN_0011.JPG" width="100" 
+                        height="100" alt="image of a pomala">
+                        <p>click on me</p> 
+                    </a>
+                    <p>click on the picture:)</p> 
+        
+                </li>
+                <li><!--3-->
+                    <img src="/Website/first/images/BKN_0011.JPG" width="100" 
+                    height="100" alt="image of a pomala">
+                    <a href="https://photos.google.com/u/0/album/AF1QipMZ0zW-su4g2z1H1dN3A9gA2b2687omYKoZSsde" target="_blank">visit Noa's photography website to see more</a>
+                </li>
+                <li><!--4--> 
+                    <p>Lorem ipsum dolor sit, amet <strong>consectetur adipisicing elit.</strong>
+                    Esse non rerum sequi, quis voluptas possimus dolorem debitis dolorum commodi. 
+                    <em>
+                    Nulla, fugiat. Similique blanditiis, 
+                    </em>
+                    impedit ipsam sequi aliquid consectetur quidem dolor.
+                    </p>
+                </li>
+                <li><!--5-->
+                    <h1>copyrigh &copy;</h1>
+                </li>
+                <li><!--2-->
+                    <p>Jumping to a pointer</p>
+                    <a href="#top">back to the top</a>
+                </li>
+                <br>
+                <li><!--7-->
+                    <p>Redirection</p>
+                    <a href="index.html" target="_blank">The first tamplet of the Webpage</a>
+                </li>
+                <br>
+                <li><!--8-->
+                    <p>Form</p>
+                    <form action="" method="">
+                        <label for='name'>first name</label>
+                        <input type="text" name="name" id="name" placeholder="please enter your name">
+                        <input type="password" placeholder="pasword">
+                        <button type="submit">submit</button></button> 
+                        <br>
+                        <input type="email" name="" id="" value="@gmail.com">
+                        <br>
+                        <textarea name="order notes" id="" cols="30" rows="10" ></textarea>
+                    </form>
+        </ol>
+                </li>
+                <li>
+                    <h3>CSS:</h3>
+                    <ol>
+                        <li>
+                            <ul>
+                                <li><p>1.3</p>
+                                    <p>Adding a link to the file with the css text styling</p>
+                                    <p>It needs to be put in the head!!</p>
+                                </li>
+                                <li><p>4.5</p>
+                                    <p>Lorem ipsum,
+                                    <div class="green">
+                                    dolor sit amet consectetur adipisicing elit.</div>
+                                    <div>
+                                    Saepe veniam illum recusandae itaque iste,
+                                    <span>i will apear as uppercase</span>
+                                    aliquam ab
+                                    </div>
+                                    quaerat impedit omnis fugit!
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+    </ul>
+
+<h1>copyrigh &copy; 2023</h1>
+</body>
+</html>
